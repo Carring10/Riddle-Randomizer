@@ -22,5 +22,5 @@ const riddles = [
 ]
 
 function handleButtonClick () {
-    alert("something");
+    console.log(riddles[Math.floor(Math.random()*riddles.length)])
 }
