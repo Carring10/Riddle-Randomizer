@@ -1,0 +1,13 @@
+#riddle-container {
+    padding: 20px;
+    background-color: aquamarine;
+    opacity: 0;
+    visibility: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#riddle-container.visible {
+    visibility: visible;
+    opacity: 1;
+}

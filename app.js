@@ -21,6 +21,14 @@ const riddles = [
     },
 ]
 
+const riddleContainer = document.getElementById("riddle-container")
+const riddleQuestion = riddleContainer.children[0];
+
+
+
 function handleButtonClick () {
-    console.log(riddles[Math.floor(Math.random()*riddles.length)])
+    const randomRiddle = riddles[Math.floor(Math.random()*riddles.length)]
+    riddleContainer.classList.add("visible");
+    riddleQuestion.innerText = randomRiddle.question
 }
+
